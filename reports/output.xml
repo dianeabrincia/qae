@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20240819 14:29:03.749" rpa="false" schemaversion="4">
+<suite id="s1" name="QA Testing" source="C:\Users\diane\Desktop\QA Testing">
+<suite id="s1-s1" name="Ui Tests" source="C:\Users\diane\Desktop\QA Testing\ui_tests">
+<suite id="s1-s1-s1" name="SQEFORM" source="C:\Users\diane\Desktop\QA Testing\ui_tests\SQEFORM.robot">
+<test id="s1-s1-s1-t1" name="SQE-002: Applicant Submit The Form Without Filling In The Form" line="26">
+<kw name="Navigate To SQE" library="sqe_keywords">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240819 14:29:04.443" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\diane\\Desktop\\QA Testing\\reports\\browser\\traces\\cced2c20-7bb7-46c3-82be-bd118437a24f"}</msg>
+<msg timestamp="20240819 14:29:04.855" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\diane\\Desktop\\QA Testing\\reports\\browser\\traces\\cced2c20-7bb7-46c3-82be-bd118437a24f"}</msg>
+<status status="PASS" starttime="20240819 14:29:04.443" endtime="20240819 14:29:04.855"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${SQE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240819 14:29:08.903" level="INFO">Successfully initialized new page object and opened url: https://josephyap9.wixsite.com/qaetestsite</msg>
+<msg timestamp="20240819 14:29:08.903" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20240819 14:29:04.856" endtime="20240819 14:29:08.903"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240819 14:29:11.903" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240819 14:29:08.903" endtime="20240819 14:29:11.903"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${TESTING_FORM_PAGE}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240819 14:29:11.924" level="INFO">Waited for Element with selector //main[@id="PAGES_CONTAINER"] at state visible</msg>
+<status status="PASS" starttime="20240819 14:29:11.903" endtime="20240819 14:29:11.924"/>
+</kw>
+<status status="PASS" starttime="20240819 14:29:04.442" endtime="20240819 14:29:11.924"/>
+</kw>
+<kw name="User Submit The Testing Form" library="sqe_keywords">
+<kw name="Click" library="Browser">
+<arg>${SUBMIT_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240819 14:29:11.925" endtime="20240819 14:29:11.999"/>
+</kw>
+<status status="PASS" starttime="20240819 14:29:11.925" endtime="20240819 14:29:11.999"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240819 14:29:16.999" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240819 14:29:11.999" endtime="20240819 14:29:16.999"/>
+</kw>
+<kw name="Validate Required Fields" library="sqe_keywords">
+<kw name="Get Attribute" library="Browser">
+<var>${name_aria_invalid}</var>
+<arg>${NAME_TEXTFIELD}</arg>
+<arg>aria-invalid</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20240819 14:29:17.018" level="INFO">Attribute is: 'true'</msg>
+<msg timestamp="20240819 14:29:17.018" level="INFO">${name_aria_invalid} = true</msg>
+<status status="PASS" starttime="20240819 14:29:17.000" endtime="20240819 14:29:17.018"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${name_aria_invalid}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240819 14:29:17.018" level="INFO">true</msg>
+<status status="PASS" starttime="20240819 14:29:17.018" endtime="20240819 14:29:17.018"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${name_aria_invalid}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<msg timestamp="20240819 14:29:17.018" level="INFO">Length is 4</msg>
+<status status="PASS" starttime="20240819 14:29:17.018" endtime="20240819 14:29:17.018"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${name_aria_invalid}</arg>
+<arg>true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240819 14:29:17.018" endtime="20240819 14:29:17.019"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${name_required}</var>
+<arg>${NAME_TEXTFIELD}</arg>
+<arg>required</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20240819 14:29:17.029" level="INFO">Attribute is: ''</msg>
+<msg timestamp="20240819 14:29:17.029" level="INFO">${name_required} = </msg>
+<status status="PASS" starttime="20240819 14:29:17.019" endtime="20240819 14:29:17.029"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${name_required}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240819 14:29:17.029" level="INFO"/>
+<status status="PASS" starttime="20240819 14:29:17.029" endtime="20240819 14:29:17.029"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${name_required}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<msg timestamp="20240819 14:29:17.029" level="INFO">Length is 0</msg>
+<msg timestamp="20240819 14:29:17.030" level="FAIL">'' should not be empty.</msg>
+<status status="FAIL" starttime="20240819 14:29:17.029" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${email_aria_invalid}</var>
+<arg>${EMAIL_TEXTFIELD}</arg>
+<arg>aria-invalid</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${email_aria_invalid}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${email_aria_invalid}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${email_aria_invalid}</arg>
+<arg>true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${email_required}</var>
+<arg>${EMAIL_TEXTFIELD}</arg>
+<arg>required</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${email_required}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${email_required}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${date_aria_invalid}</var>
+<arg>${DATE_OF_AVAILABILITY_FIELD}</arg>
+<arg>aria-invalid</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${date_aria_invalid}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${date_aria_invalid}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.030"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${date_aria_invalid}</arg>
+<arg>true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.030" endtime="20240819 14:29:17.031"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${date_required}</var>
+<arg>${DATE_OF_AVAILABILITY_FIELD}</arg>
+<arg>required</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.031" endtime="20240819 14:29:17.031"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${date_required}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.031" endtime="20240819 14:29:17.031"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${date_required}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" starttime="20240819 14:29:17.031" endtime="20240819 14:29:17.031"/>
+</kw>
+<kw name="Get WebElements">
+<var>@{checkboxes}</var>
+<arg>${SKILLS_LIST}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.032" endtime="20240819 14:29:17.032"/>
+</kw>
+<kw name=":FOR">
+<arg>${checkbox}</arg>
+<arg>IN</arg>
+<arg>@{checkboxes}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.032" endtime="20240819 14:29:17.032"/>
+</kw>
+<kw name="\">
+<arg>${checkbox_aria_invalid}=</arg>
+<arg>Get Attribute</arg>
+<arg>${checkbox}</arg>
+<arg>aria-invalid</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.032" endtime="20240819 14:29:17.032"/>
+</kw>
+<kw name="\">
+<arg>Log</arg>
+<arg>${checkbox_aria_invalid}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.032" endtime="20240819 14:29:17.032"/>
+</kw>
+<kw name="\">
+<arg>Should Not Be Empty</arg>
+<arg>${checkbox_aria_invalid}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.032" endtime="20240819 14:29:17.032"/>
+</kw>
+<kw name="\">
+<arg>Should Be Equal As Strings</arg>
+<arg>${checkbox_aria_invalid}</arg>
+<arg>true</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.033" endtime="20240819 14:29:17.033"/>
+</kw>
+<kw name="\">
+<arg>${checkbox_required}=</arg>
+<arg>Get Attribute</arg>
+<arg>${checkbox}</arg>
+<arg>required</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.033" endtime="20240819 14:29:17.033"/>
+</kw>
+<kw name="\">
+<arg>Log</arg>
+<arg>${checkbox_required}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.033" endtime="20240819 14:29:17.033"/>
+</kw>
+<kw name="\">
+<arg>Should Not Be Empty</arg>
+<arg>${checkbox_required}</arg>
+<status status="NOT RUN" starttime="20240819 14:29:17.033" endtime="20240819 14:29:17.033"/>
+</kw>
+<status status="FAIL" starttime="20240819 14:29:17.000" endtime="20240819 14:29:17.033"/>
+</kw>
+<tag>SQEForm</tag>
+<status status="FAIL" starttime="20240819 14:29:04.441" endtime="20240819 14:29:17.033">'' should not be empty.</status>
+</test>
+<status status="FAIL" starttime="20240819 14:29:03.766" endtime="20240819 14:29:17.116"/>
+</suite>
+<status status="FAIL" starttime="20240819 14:29:03.765" endtime="20240819 14:29:17.126"/>
+</suite>
+<status status="FAIL" starttime="20240819 14:29:03.750" endtime="20240819 14:29:17.128"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">SQEForm</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="QA Testing">QA Testing</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Ui Tests">QA Testing.Ui Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="SQEFORM">QA Testing.Ui Tests.SQEFORM</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

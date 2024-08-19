@@ -1,0 +1,52 @@
+{"level":30,"time":"2024-08-19T06:29:04.258Z","pid":41312,"hostname":"LawAdvisor","msg":"Listening on 62127"}
+{"level":30,"time":"2024-08-19T06:29:04.439Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:04.439Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:04.442Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:04.442Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:04.444Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-08-19T06:29:04.853Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-08-19T06:29:04.858Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-08-19T06:29:04.858Z","pid":41312,"hostname":"LawAdvisor","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-08-19T06:29:04.871Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active context"}
+{"level":30,"time":"2024-08-19T06:29:05.070Z","pid":41312,"hostname":"LawAdvisor","msg":"Video path: undefined"}
+{"level":30,"time":"2024-08-19T06:29:05.070Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active page"}
+{"level":30,"time":"2024-08-19T06:29:08.901Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method newPage"}
+{"level":30,"time":"2024-08-19T06:29:11.904Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-08-19T06:29:11.904Z","pid":41312,"hostname":"LawAdvisor","msg":"Strict mode is enabled, find Locator with //main[@id=\"PAGES_CONTAINER\"] in page."}
+{"level":30,"time":"2024-08-19T06:29:11.923Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-08-19T06:29:11.926Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method click"}
+{"level":30,"time":"2024-08-19T06:29:11.926Z","pid":41312,"hostname":"LawAdvisor","msg":"Strict mode is enabled, find Locator with //span[text()=\"Submit\"] in page."}
+{"level":30,"time":"2024-08-19T06:29:11.996Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method click"}
+{"level":30,"time":"2024-08-19T06:29:17.002Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-08-19T06:29:17.002Z","pid":41312,"hostname":"LawAdvisor","msg":"Strict mode is enabled, find Locator with //input[@name=\"name\"] in page."}
+{"level":30,"time":"2024-08-19T06:29:17.016Z","pid":41312,"hostname":"LawAdvisor","msg":"Retrieved attribute for element //input[@name=\"name\"] containing true"}
+{"level":30,"time":"2024-08-19T06:29:17.016Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-08-19T06:29:17.020Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-08-19T06:29:17.020Z","pid":41312,"hostname":"LawAdvisor","msg":"Strict mode is enabled, find Locator with //input[@name=\"name\"] in page."}
+{"level":30,"time":"2024-08-19T06:29:17.027Z","pid":41312,"hostname":"LawAdvisor","msg":"Retrieved attribute for element //input[@name=\"name\"] containing "}
+{"level":30,"time":"2024-08-19T06:29:17.028Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-08-19T06:29:17.036Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.038Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.040Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.041Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.043Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active context"}
+{"level":30,"time":"2024-08-19T06:29:17.044Z","pid":41312,"hostname":"LawAdvisor","msg":"Changing current active page"}
+{"level":30,"time":"2024-08-19T06:29:17.044Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active page"}
+{"level":30,"time":"2024-08-19T06:29:17.049Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.053Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.055Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-19T06:29:17.056Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-19T06:29:17.057Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-08-19T06:29:17.058Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-08-19T06:29:17.062Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.063Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.064Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active context"}
+{"level":30,"time":"2024-08-19T06:29:17.064Z","pid":41312,"hostname":"LawAdvisor","msg":"Changing current active page"}
+{"level":30,"time":"2024-08-19T06:29:17.064Z","pid":41312,"hostname":"LawAdvisor","msg":"Changed active page"}
+{"level":30,"time":"2024-08-19T06:29:17.066Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-08-19T06:29:17.079Z","pid":41312,"hostname":"LawAdvisor","msg":"Removed page=67a1dc0d-2235-4025-87dc-f01939e3a5ee from context=cf65eb24-b7c3-4213-843f-1fcbe3506aa5 page stack"}
+{"level":30,"time":"2024-08-19T06:29:17.112Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-08-19T06:29:17.122Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.122Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-08-19T06:29:17.179Z","pid":41312,"hostname":"LawAdvisor","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-08-19T06:29:17.362Z","pid":41312,"hostname":"LawAdvisor","msg":"End of node method closeAllBrowsers"}
